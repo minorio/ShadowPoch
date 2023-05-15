@@ -21,16 +21,7 @@ profileInputImg.addEventListener('input', async (event) => {
    
 
 
-// function getImg() {
-//      fetch(url + 'user' + `/${localStorage.getItem('UserID')}`)
-//     .then((res) => {
-//         return res.json();
-//     })
-//     .then((profile) => {
-//         // console.log(profile)
-//         profileImg.src = profile.avatarImg;
-//     })  
-// }
+
 
 const userIconLink = document.querySelector('#user-icon__link');
 const userIcon = document.querySelector('.icon-user');
@@ -38,7 +29,6 @@ const userNickname = document.querySelector('.profile__nickname-title');
 
 
 async function getUserAvatar() {
-    // userIcon.classList.remove('hide')
     if(localStorage.getItem('UserID')) {
        
        await fetch(url + 'user' + `/${localStorage.getItem('UserID')}`)
@@ -51,7 +41,6 @@ async function getUserAvatar() {
                 profileImg.src = profile.avatarImg;
                 userIconLink.innerHTML = `<img class="img-user" src="${profile.avatarImg}" alt="avatar">` 
             } else{
-                 // userIcon.classList.remove('hide')
                  profileImg.src = './images/avatars/2.jpg';
                  userIconLink.innerHTML = `<img class="img-user" src="./images/avatars/2.jpg" alt="avatar">`              
             } 

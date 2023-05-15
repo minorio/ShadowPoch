@@ -33,7 +33,6 @@ registerBtn.addEventListener('click', (event) => {
         modalRegisteredAccount.setContent("Account not registered");
         modalRegisteredAccount.setTitle('');
         modalRegisteredAccount.show();
-        // alert('Account not registered')
     }
 
 })
@@ -100,7 +99,6 @@ const loginPassword = document.querySelector('#password');
 const loginBtn = document.querySelector('#show-modal__login-btn');
 
 
-// const userLogOut= document.querySelector('#user__logOut');
 const usersLogin = [];
 
 loginBtn.addEventListener('click', (event) => {
@@ -122,13 +120,6 @@ loginBtn.addEventListener('click', (event) => {
     }
 })
 
-// userLogOut.addEventListener('click', logOutHidImg)
-
-// function logOutHidImg() {
-//     localStorage.removeItem('UserID')
-//     userLogOut.classList.add('hide')
-//     userIcon.classList.remove('hide')
-// }
 
 
 loginNickname.addEventListener('blur', loginNicknameCheck)

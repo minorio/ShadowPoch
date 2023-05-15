@@ -48,18 +48,15 @@ const onLocationChange = () => {
                 body.classList.add('background__white')
                 break;
             case '#categories':
-                // createLoader()
-
                 categoriesPage.hidden = false;
                 footer.hidden = false;
                 body.classList.add('background__blue')
-                // getProducts()
                 break;
             case '#product':
                 getProduct()
                 sizesChooser()
                 findProductinLikedOperation()
-                
+            
                 if(document.querySelector('product-actions__addtoliked-svg__path--active')) {
                     document.querySelector('product-actions__addtoliked-svg__path--active').classList.remove('product-actions__addtoliked-svg__path--active')
                 }
@@ -67,7 +64,6 @@ const onLocationChange = () => {
                 productPage.hidden = false;
                 footer.hidden = false;
                 body.classList.add('background__blue');
-                // menuItem.classList.add('dark')
                 break;
             case '#profile':
                 if (localStorage.getItem('UserID')) {
@@ -111,8 +107,6 @@ const onLocationChange = () => {
                     modalLoginAccount.show();
                     location.hash = '#profile';
                 } else {
-                    // logOutHidImg() 
-                    // getUserAvatar() 
                     loginPage.hidden = false;
                     body.classList.add('background__authorization')
                 }
@@ -125,8 +119,6 @@ const onLocationChange = () => {
                     modalLoginAccount.show();
                     location.hash = '#profile';
                 } else {
-                    // logOutHidImg() 
-                    // getUserAvatar() 
                     registerPage.hidden = false;
                     body.classList.add('background__authorization')
                 }
@@ -137,49 +129,6 @@ const onLocationChange = () => {
             default:
             location.hash = '#home';
                 break;
-        // case '#all':
-        //     if (!localStorage.getItem('isUserLoggedIn')) {
-        //         location.hash = '#login';
-        //         console.warn('Пожалуйста авторизируйтесь !')
-        //     } else {
-        //         usersTable.hidden = false;
-        //         menu.hidden = false;
-        //         main.hidden = true;
-        //         logout.hidden = true;
-        //         noteBtn.hidden = false;
-        //     }
-
-        //     createTable();
-        //     break;
-        // case '#notes':
-        //     if (!localStorage.getItem('isUserLoggedIn')) {
-        //         location.hash = '#login';
-        //         console.warn('Пожалуйста авторизируйтесь !')
-        //     } else {
-        //         getNotes()
-
-        //         notesPage.hidden = false;
-        //         menu.hidden = false;
-        //         logout.hidden = false;
-        //         main.hidden = false;
-        //     }
-        //     break;
-        // case '#login':
-        //     if (localStorage.getItem('isUserLoggedIn')) {
-        //         loginPage.hidden = true;
-        //         location.hash = '#notes';
-        //         console.warn('Вы уже вошли в свой аккаунт !')
-        //     } else {
-        //         loginPage.hidden = false;
-        //         main.hidden = false;
-        //     }
-        //     break;
-        // case '':
-        //     location.hash = '#login';
-        //     break;
-        // default:
-        //     location.hash = '#login';
-        //     break;
     }
 }
 

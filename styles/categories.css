@@ -47,8 +47,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 460px;
-    width: 380px;
+    /* height: 460px;
+    width: 380px; */
     background-color: #fff;
     position: relative;
 }

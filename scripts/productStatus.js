@@ -88,9 +88,6 @@ async function inLikedOperation() {
         location.hash = 'login';
     }
 }
-// fetch(url + 'product-status' + "/16", {
-//     method: "DELETE"
-//   });
 
 async function findProductinLikedOperation() {
     addToLikedSvg.classList.remove('product-actions__addtoliked-svg__path--active')

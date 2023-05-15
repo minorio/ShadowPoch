@@ -4,7 +4,6 @@ const productUpload = document.querySelector('.productUpload');
 
 
 function checkUsersStatus() {
-    // productUpload.classList.add('hide');
     fetch(url + 'user' + `/${localStorage.getItem('UserID')}`)
         .then((res) => {
             return res.json();
@@ -19,5 +18,4 @@ function checkUsersStatus() {
         })
 }
 
-// checkUsersStatus() 
 

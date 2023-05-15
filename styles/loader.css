@@ -10,20 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-/* .loader {
-    width: 75px;
-    height: 75px;
-    border: 10px solid #ff450185;
-    border-radius: 50%;
-    border-left-color: #ff4501;
-    animation: loader 1.3s linear infinite;
-}
 
-@keyframes loader {
-    100% {
-        transform: rotate(360deg);
-    }
-} */
 .opacityHide{
     opacity: 0;
 }
